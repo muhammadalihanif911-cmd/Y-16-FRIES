@@ -1,8 +1,73 @@
 <!DOCTYPE html>
-<html>
-<body style="text-align:center;">
-    <h1>Y 16 FRIES - TEST PAGE</h1>
-    <h2>Order: 03214760034</h2>
-    <p>Agar aapko ye nazar aa raha hai, to app theek ho gayi hai!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y 16 FRIES - Official Menu</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: white; }
+        .header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80'); background-size: cover; padding: 40px 20px; text-align: center; border-bottom: 5px solid #e41e26; }
+        h1 { color: #ffd700; font-size: 36px; margin: 0; text-shadow: 2px 2px #000; }
+        .tagline { color: #fff; font-style: italic; }
+        .container { padding: 20px; }
+        .category-title { border-left: 5px solid #e41e26; padding-left: 10px; margin: 20px 0; color: #ffd700; font-size: 24px; }
+        .item { background: #2a2a2a; border-radius: 10px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #333; }
+        .item-info h3 { margin: 0; color: #fff; }
+        .item-info p { margin: 5px 0 0; color: #aaa; font-size: 14px; }
+        .price { color: #ffd700; font-weight: bold; font-size: 18px; }
+        .footer { position: fixed; bottom: 0; width: 100%; background: #e41e26; padding: 15px 0; text-align: center; }
+        .order-btn { color: white; text-decoration: none; font-weight: bold; font-size: 20px; display: block; }
+        .spacer { height: 80px; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🍟 Y 16 FRIES 🍟</h1>
+    <p class="tagline">The Best Loaded Fries in Town</p>
+</div>
+
+<div class="container">
+    <div class="category-title">Specialty Fries</div>
+
+    <div class="item">
+        <div class="item-info">
+            <h3>🔥 Peri Peri Fries</h3>
+            <p>Spicy African bird's eye chili seasoning</p>
+        </div>
+        <div class="price">Rs. 150</div>
+    </div>
+
+    <div class="item">
+        <div class="item-info">
+            <h3>🍖 BBQ Loaded Fries</h3>
+            <p>Smoky BBQ sauce with extra crunch</p>
+        </div>
+        <div class="price">Rs. 180</div>
+    </div>
+
+    <div class="item">
+        <div class="item-info">
+            <h3>🧂 Mix Masala Fries</h3>
+            <p>Traditional desi spices blend</p>
+        </div>
+        <div class="price">Rs. 130</div>
+    </div>
+
+    <div class="item">
+        <div class="item-info">
+            <h3>🧀 Cheese Overload</h3>
+            <p>Dripping with premium melted cheese</p>
+        </div>
+        <div class="price">Rs. 220</div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="footer">
+    <a href="tel:03214760034" class="order-btn">📞 Order Now: 03214760034</a>
+</div>
+
 </body>
 </html>
