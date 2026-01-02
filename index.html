@@ -4,79 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y 16 FRIES | Official Menu</title>
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         :root { --red: #e41e26; --white: #ffffff; }
-        body { font-family: 'Outfit', sans-serif; background: var(--white); margin: 0; padding-bottom: 160px; color: #333; }
+        body { font-family: 'Outfit', sans-serif; background: var(--white); margin: 0; padding-bottom: 160px; }
         .header { padding: 30px 20px; text-align: center; border-bottom: 2px solid #f8f8f8; }
         .header h1 { margin: 0; font-size: 32px; color: var(--red); font-weight: 800; }
         .sauce-msg { background: #fff1f1; color: var(--red); padding: 12px; margin: 15px; border-radius: 12px; font-size: 13px; text-align: center; font-weight: 800; border: 1px solid #ffebeb; }
         .container { padding: 10px 15px; }
-        .section-title { font-size: 22px; font-weight: 800; margin: 25px 0 15px; color: #000; border-left: 5px solid var(--red); padding-left: 10px; text-transform: uppercase; }
+        .section-title { font-size: 22px; font-weight: 800; margin: 25px 0 15px; border-left: 5px solid var(--red); padding-left: 10px; }
         .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .food-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); border: 1px solid #f0f0f0; animation: fadeIn; animation-duration: 0.8s; }
-        .img-box { width: 100%; height: 120px; overflow: hidden; background: #eee; }
+        .food-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); border: 1px solid #f0f0f0; }
+        .img-box { width: 100%; height: 120px; overflow: hidden; background: #fafafa; }
         .img-box img { width: 100%; height: 100%; object-fit: cover; }
         .info { padding: 12px; }
-        .info h3 { margin: 0; font-size: 14px; font-weight: 700; color: #111; height: 35px; overflow: hidden; }
+        .info h3 { margin: 0; font-size: 14px; font-weight: 700; }
         .price { color: var(--red); font-weight: 800; font-size: 13px; margin-top: 5px; display: block; }
-        .size-tag { font-size: 9px; color: #999; text-transform: uppercase; font-weight: 600; }
         .footer { position: fixed; bottom: 0; width: 100%; background: white; padding: 15px 0; border-top: 1px solid #eee; z-index: 100; }
-        .btn { display: block; margin: 0 20px 8px; padding: 14px; border-radius: 12px; text-align: center; text-decoration: none; font-weight: 800; }
-        .wa { background: #25D366; color: white; }
-        .call { background: var(--red); color: white; }
+        .btn { display: block; margin: 0 20px 8px; padding: 14px; border-radius: 12px; text-align: center; text-decoration: none; font-weight: 800; color: white; }
     </style>
 </head>
 <body>
+
 <div class="header"><h1>Y 16 FRIES</h1></div>
-<div class="sauce-msg animate__animated animate__pulse animate__infinite">⚠️ Signature Sauces ke charges alag se honge!</div>
+<div class="sauce-msg">⚠️ NOTE: Signature Sauces ke charges alag se honge!</div>
+
 <div class="container">
     <div class="section-title">🍟 Loaded Fries</div>
     <div class="menu-grid">
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Classic Fries</h3><span class="price">100 / 180 PKR</span><span class="size-tag">Half / Full</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/115740/pexels-photo-115740.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Peri Peri Fries</h3><span class="price">100 / 180 PKR</span><span class="size-tag">Half / Full</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>BBQ Fries</h3><span class="price">150 / 250 PKR</span><span class="size-tag">Half / Full</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/2103949/pexels-photo-2103949.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Mix Masala</h3><span class="price">150 / 250 PKR</span><span class="size-tag">Half / Full</span></div>
-        </div>
-    </div><div class="section-title">🥟 Samosa & Snacks</div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400"></div><div class="info"><h3>Classic Fries</h3><span class="price">100 / 180 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1630333521189-8a926501ad3c?w=400"></div><div class="info"><h3>Peri Peri Fries</h3><span class="price">100 / 180 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400"></div><div class="info"><h3>BBQ Fries</h3><span class="price">150 / 250 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1623238913973-21e45cced554?w=400"></div><div class="info"><h3>Mix Masala</h3><span class="price">150 / 250 PKR</span></div></div>
+    </div>
+
+    <div class="section-title">🥟 Samosa & Snacks</div>
     <div class="menu-grid">
-        <div class="food-card">
-            <div class="img-box"><img src="https://cdn.pixabay.com/photo/2021/01/22/19/27/samosa-5940916_1280.jpg"></div>
-            <div class="info"><h3>Malai Boti Samosa</h3><span class="price">270 / 540 PKR</span><span class="size-tag">6 / 12 Pcs</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Kabbab Roll</h3><span class="price">240 / 480 PKR</span><span class="size-tag">6 / 12 Pcs</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://cdn.pixabay.com/photo/2016/11/25/16/08/samosa-1858344_1280.jpg"></div>
-            <div class="info"><h3>Chicken Qeema</h3><span class="price">270 / 540 PKR</span><span class="size-tag">6 / 12 Pcs</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/4449068/pexels-photo-4449068.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Sabzi Chicken</h3><span class="price">180 / 360 PKR</span><span class="size-tag">6 / 12 Pcs</span></div>
-        </div>
-        <div class="food-card">
-            <div class="img-box"><img src="https://images.pexels.com/photos/14457297/pexels-photo-14457297.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
-            <div class="info"><h3>Aloo Samosa</h3><span class="price">60 / 120 PKR</span><span class="size-tag">6 / 12 Pcs</span></div>
-        </div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1601050690597-df056fb01793?w=400"></div><div class="info"><h3>Malai Boti</h3><span class="price">270 / 540 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://www.thespruceeats.com/thmb/9W6tA-mXqM9Zq-T8XmC7L3fD9w8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/samosa-recipe-1957920-hero-01-f1f1e3b6e8b14e6e9e8f8b8e8b8e8b8e.jpg"></div><div class="info"><h3>Chicken Qeema</h3><span class="price">270 / 540 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400"></div><div class="info"><h3>Kabab Roll</h3><span class="price">240 / 480 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1626132646533-3d6006e890f5?w=400"></div><div class="info"><h3>Sabzi Chicken</h3><span class="price">180 / 360 PKR</span></div></div>
+        <div class="food-card"><div class="img-box"><img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?w=400"></div><div class="info"><h3>Aloo Samosa</h3><span class="price">60 / 120 PKR</span></div></div>
     </div>
 </div>
+
 <div class="footer">
-    <a href="https://wa.me/923214760034" class="btn wa">Order on WhatsApp</a>
-    <a href="tel:03214760034" class="btn call">Call Now: 03214760034</a>
+    <a href="https://wa.me/923214760034" class="btn" style="background: #25D366;">WhatsApp Order</a>
+    <a href="tel:03214760034" class="btn" style="background: var(--red);">Call Now</a>
 </div>
+
 </body>
 </html>
