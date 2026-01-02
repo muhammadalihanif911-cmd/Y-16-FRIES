@@ -1,0 +1,15 @@
+{
+  "name": "Y 16 FRIES",
+  "short_name": "Y16",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e41e26",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/706/706164.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
