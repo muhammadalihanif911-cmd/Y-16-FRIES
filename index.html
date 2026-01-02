@@ -53,6 +53,11 @@
     <a href="https://wa.me/923214760034" class="btn" style="background: #25D366;">WhatsApp Order</a>
     <a href="tel:03214760034" class="btn" style="background: var(--red);">Call Now</a>
 </div>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
 </body>
 </html>
+
