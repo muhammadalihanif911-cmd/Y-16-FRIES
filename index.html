@@ -4,134 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y 16 FRIES & SNACKS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
-        :root { --red: #e41e26; --bg: #ffffff; --grey: #f8f9fa; }
-        body { font-family: 'Outfit', sans-serif; background: var(--bg); margin: 0; padding-bottom: 140px; color: #333; }
+        :root { --red: #e41e26; --white: #ffffff; }
+        body { font-family: 'Outfit', sans-serif; background: var(--white); margin: 0; padding-bottom: 150px; }
         
-        /* Header */
-        .header { padding: 40px 20px; text-align: center; background: white; border-bottom: 1px solid #eee; }
-        .header h1 { margin: 0; font-size: 36px; color: var(--red); font-weight: 800; letter-spacing: -1px; }
-        .header p { margin: 5px 0 0; color: #666; font-size: 14px; font-weight: 600; }
-
-        /* Notice for Sauces */
-        .sauce-notice { 
-            background: #fff3f3; color: var(--red); padding: 10px; text-align: center; 
-            font-size: 12px; font-weight: 700; border-radius: 10px; margin: 15px;
-            border: 1px dashed var(--red);
-        }
+        .header { padding: 30px 20px; text-align: center; border-bottom: 2px solid #f8f8f8; }
+        .header h1 { margin: 0; font-size: 32px; color: var(--red); font-weight: 800; }
+        
+        .sauce-msg { background: #fff1f1; color: var(--red); padding: 10px; margin: 15px; border-radius: 12px; font-size: 13px; text-align: center; font-weight: 600; border: 1px solid #ffebeb; }
 
         .container { padding: 10px 15px; }
-        .section-title { font-size: 24px; font-weight: 800; margin: 25px 0 15px; color: #000; display: flex; align-items: center; gap: 8px; }
+        .section-title { font-size: 22px; font-weight: 800; margin: 20px 0 15px; color: #000; border-left: 5px solid var(--red); padding-left: 10px; }
 
-        /* Professional Grid */
+        /* Real Food Grid */
         .food-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 
-        /* Food Card */
         .food-card { 
-            background: white; border-radius: 25px; overflow: hidden; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06); transition: 0.4s;
-            border: 1px solid #f0f0f0;
-            animation: fadeInUp; animation-duration: 0.8s;
+            background: white; border-radius: 20px; overflow: hidden; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;
+            animation: fadeIn; animation-duration: 1s;
         }
-        .food-card:hover { transform: translateY(-5px); }
 
-        .img-holder { width: 100%; height: 140px; overflow: hidden; position: relative; }
-        .img-holder img { width: 100%; height: 100%; object-fit: cover; }
+        .img-box { width: 100%; height: 130px; overflow: hidden; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; }
         
         .info { padding: 12px; }
-        .info h3 { margin: 0; font-size: 16px; font-weight: 700; color: #222; line-height: 1.2; }
-        .price-tag { color: var(--red); font-weight: 800; font-size: 14px; margin-top: 8px; display: block; }
-        .extra-info { font-size: 10px; color: #999; font-weight: 600; margin-top: 4px; display: block; }
+        .info h3 { margin: 0; font-size: 15px; font-weight: 700; color: #222; }
+        .price { color: var(--red); font-weight: 800; font-size: 14px; margin-top: 5px; display: block; }
+        .size-tag { font-size: 10px; color: #888; text-transform: uppercase; font-weight: 600; }
 
-        /* Contact Buttons */
-        .footer-nav { 
-            position: fixed; bottom: 0; width: 100%; background: white; 
-            padding: 15px 0; border-top: 1px solid #eee; z-index: 1000;
-            display: flex; flex-direction: column; gap: 10px;
-        }
-        .btn { 
-            margin: 0 20px; padding: 14px; border-radius: 15px; 
-            text-align: center; text-decoration: none; font-weight: 800; font-size: 15px;
-            display: flex; align-items: center; justify-content: center; gap: 10px;
-        }
-        .wa-btn { background: #25D366; color: white; box-shadow: 0 5px 15px rgba(37,211,102,0.3); }
-        .call-btn { background: var(--red); color: white; box-shadow: 0 5px 15px rgba(228,30,38,0.3); }
+        /* Order Buttons */
+        .footer { position: fixed; bottom: 0; width: 100%; background: white; padding: 15px 0; border-top: 1px solid #eee; z-index: 100; }
+        .btn { display: block; margin: 0 20px 10px; padding: 14px; border-radius: 12px; text-align: center; text-decoration: none; font-weight: 800; }
+        .wa { background: #25D366; color: white; }
+        .call { background: var(--red); color: white; }
     </style>
 </head>
 <body>
 
-<div class="header animate__animated animate__fadeIn">
+<div class="header animate__animated animate__fadeInDown">
     <h1>Y 16 FRIES</h1>
-    <p>DELIVERING FRESHNESS TO YOUR DOOR</p>
+    <p style="margin:0; font-weight:600; color:#666;">Premium Fries & Snacks</p>
 </div>
 
-<div class="sauce-notice animate__animated animate__shakeX">
-    ⚠️ NOTE: Signature Sauces are charged separately!
+<div class="sauce-msg animate__animated animate__shakeX">
+    ⚠️ Dost, Signature Sauces ke charges alag se honge!
 </div>
 
 <div class="container">
     <div class="section-title">🍟 Loaded Fries</div>
     <div class="food-grid">
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400"></div>
+        <div class="food-card animate__animated animate__zoomIn">
+            <div class="img-box"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=500"></div>
             <div class="info">
                 <h3>Classic Fries</h3>
-                <span class="price-tag">100 / 180 PKR</span>
-                <span class="extra-info">Half / Full Plate</span>
+                <span class="price">100 / 180 PKR</span>
+                <span class="size-tag">Half / Full</span>
             </div>
         </div>
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1630333521189-8a926501ad3c?auto=format&fit=crop&w=400"></div>
+        <div class="food-card animate__animated animate__zoomIn">
+            <div class="img-box"><img src="https://images.unsplash.com/photo-1630333521189-8a926501ad3c?q=80&w=500"></div>
             <div class="info">
-                <h3>Peri Peri</h3>
-                <span class="price-tag">100 / 180 PKR</span>
-                <span class="extra-info">Half / Full Plate</span>
-            </div>
-        </div>
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=400"></div>
-            <div class="info">
-                <h3>BBQ Fries</h3>
-                <span class="price-tag">150 / 250 PKR</span>
-                <span class="extra-info">Half / Full Plate</span>
-            </div>
-        </div>
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=400"></div>
-            <div class="info">
-                <h3>Mix Masala</h3>
-                <span class="price-tag">150 / 250 PKR</span>
-                <span class="extra-info">Half / Full Plate</span>
+                <h3>Peri Peri Fries</h3>
+                <span class="price">100 / 180 PKR</span>
+                <span class="size-tag">Half / Full</span>
             </div>
         </div>
     </div>
 
-    <div class="section-title">🥟 Snacks & More</div>
+    <div class="section-title">🥟 Samosa & Snacks</div>
     <div class="food-grid">
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1601050690597-df056fb01793?auto=format&fit=crop&w=400"></div>
+        <div class="food-card animate__animated animate__zoomIn">
+            <div class="img-box"><img src="https://images.unsplash.com/photo-1601050690597-df056fb01793?q=80&w=500"></div>
             <div class="info">
                 <h3>Malai Boti</h3>
-                <span class="price-tag">270 / 540 PKR</span>
-                <span class="extra-info">6 / 12 Pieces</span>
+                <span class="price">270 / 540 PKR</span>
+                <span class="size-tag">6 / 12 Pcs</span>
             </div>
         </div>
-        <div class="food-card">
-            <div class="img-holder"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=400"></div>
+        <div class="food-card animate__animated animate__zoomIn">
+            <div class="img-box"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=500"></div>
             <div class="info">
                 <h3>Kabbab Roll</h3>
-                <span class="price-tag">240 / 480 PKR</span>
-                <span class="extra-info">6 / 12 Pieces</span>
+                <span class="price">240 / 480 PKR</span>
+                <span class="size-tag">6 / 12 Pcs</span>
             </div>
         </div>
     </div>
 </div>
 
-<div class="footer-nav animate__animated animate__slideInUp">
-    <a href="https://wa.me/923214760034?text=Salam!%20I%20want%20to%20order%20from%20Y-16." class="btn wa-btn">WhatsApp Order</a>
-    <a href="tel:03214760034" class="btn call-btn">Call: 03214760034</a>
+<div class="footer animate__animated animate__slideInUp">
+    <a href="https://wa.me/923214760034" class="btn wa">Order on WhatsApp</a>
+    <a href="tel:03214760034" class="btn call">Call Now</a>
 </div>
 
 </body>
