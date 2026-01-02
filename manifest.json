@@ -3,13 +3,14 @@
   "short_name": "Y16",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#e41e26",
   "theme_color": "#e41e26",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/706/706164.png",
+      "src": "https://i.ibb.co/m5vP8S6/y16-logo.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
